@@ -1,0 +1,62 @@
+<html>
+    <head></head>
+    <body>
+        <legend>register here</legend>
+        <form action="./pattern.txt">
+            <pre>
+                <div style="background-color: black;">
+                    <label for="enter name">enter name</label>
+                    <input type="text" placeholder="enter name here"  id="fullname" pattern="[A-Za-z0-9]{6}" required/>
+                </div>
+                <div style="background-color: red;">
+                    <label for="password">enter password:--</label>
+                    <input type="password" placeholder="enter password here" id="enter password" pattern="[A-Za-z0-9@$&*^+]{8}" required/>
+                </div>
+                <div style="background-color: yellow;">
+                    <label for="email">enter email:--</label>
+                    <input type="email" placeholder="enter email here" id="enter password" pattern="[a-z_.0-9]+@[a-z]+\.[a-z]{0,9}" required/>
+                </div>
+                <div style="background-color: blueviolet;">
+                <label for="enter courses">enter courses:--</label>
+                <select name="course" id="enter courses" style="width: 170px">
+                    <option value="enter courses">enter courses</option>
+                    <option value="CSE">CSE</option>
+                    <option value="ECE" disabled>ECE</option>
+                    <option value="EEE">EEE</option>
+                </select>
+                </div>
+                <div style="background-color: darkgreen;">
+                        <input type="text" list="timings"/>
+                        <datalist id="timings">
+                            <option value="8:30-10:00">8:30-10:00</option>
+                            <option value="10:30-2:00">10:30-2:00</option>
+                            <option value="2:30-4:00">2:30-4:00</option>
+                        </datalist>
+                    </div>
+                    <div style="background-color: darkslateblue;">
+                        <input type="file"/> 
+                    </div>
+                <div style="background-color: chocolate;">
+                male:--<input type="radio" id="male" name="gender" value="male" required>
+                female:--<input type="radio" id="female" name="gender" value="female" required>
+                others:--<input type="radio" id="others" name="gender" value="others" required>
+                </div>
+                <input type="checkbox"> I agree to the<a href="">terms</a>and<a href="">conditions</a>
+                <textarea rows="8" cols="40" read only>
+                    meghana
+                    6-61
+                    505452
+                    ts
+                    jagitial
+                </textarea>
+                <button type="submit">submit</button>
+
+                
+                    </select>
+
+                </div>
+                
+            </pre>
+        </form>
+    </body>
+    </html>
